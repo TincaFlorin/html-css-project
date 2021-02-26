@@ -8,6 +8,12 @@
 
 /* Typography */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -164,4 +170,49 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Button */
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  outline: 0;
+  text-align: center;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: white;
+}
+.btn--primary:hover {
+  background: #5983ff;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.btn--secondary:hover {
+  background: #60fcfc;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: white;
+}
+.btn--accent:hover {
+  background: #fd4516;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
 }
